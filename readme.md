@@ -83,7 +83,7 @@ Then run
 
 #### 1: Copy all `*.nanorc` files into `~/.nano/*`
 
-#### 2: Add whichever ones you want by including them in ~/.nanorc.
+#### 2: Add whichever ones you want by including them in `~/.nanorc`. Eg. `include ~/.nano/swift.nanorc`
 
 
 ## Tricks & Tweaks
