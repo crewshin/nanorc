@@ -81,9 +81,9 @@ Then run
 
 # tl;dr
 
-## 1: Copy all `*.nanorc` files into `~/.nano/*`
+#### 1: Copy all `*.nanorc` files into `~/.nano/*`
 
-## 2: Add whichever ones you want by including them in ~/.nanorc.
+#### 2: Add whichever ones you want by including them in ~/.nanorc.
 
 
 ## Tricks & Tweaks
