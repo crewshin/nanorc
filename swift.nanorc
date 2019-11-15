@@ -1,7 +1,3 @@
-##############################################################################
-# Swift syntax highlighting for Nano. v.1.1
-##############################################################################
-
 syntax "Swift" "\.swift$"
 
 # Default
@@ -21,9 +17,9 @@ color cyan "\<(print)\>"
 color magenta "\<(init)\>"
 
 # Attribute
-color red "(@+[a-zA-Z]+)"
+color magenta "(@+[a-zA-Z]+)"
 
-# Numbers / Decimal Literal 
+# Numbers / Decimal Literal
 color blue "\<([0-9]+)\>"
 # Unicode Literal "U+"
 color blue "\<(U\++[0-9A-Z]+)\>"
@@ -49,16 +45,16 @@ color magenta "\<(UnicodeScalarType|IntMax|UIntMax|Void|Any|Comparable|Equatable
 color cyan "\<(Foundation|Glibc|Darwin|XCTest)\>"
 
 # Text
-color red ""[^"]*""
+color brightyellow ""[^"]*""
 
 # Variable in Text
 color white start="\\\(" end="\)"
 
 # Comments
-color green "//.*"
-color brightgreen "///.*"
-color green start="/\*\*" end="\*/"
-color green "[/**]"
+color brightblack "//.*"
+color brightblack "///.*"
+color brightblack start="/\*\*" end="\*/"
+color brightblack "[/**]"
 
 # Trailing whitespace
-color ,green "[[:space:]]+$"
+#color ,green "[[:space:]]+$"

@@ -6,8 +6,8 @@ if [ ! "$(command -v unzip)" ]; then
   exit 1
 fi
 
-_fetch_sources(){
-  wget -O /tmp/nanorc.zip https://github.com/scopatz/nanorc/archive/master.zip
+_fetch_sources() {
+  wget -O /tmp/nanorc.zip https://github.com/crewshin/nanorc/archive/master.zip
   mkdir -p ~/.nano/
 
   cd ~/.nano/ || exit
@@ -17,7 +17,7 @@ _fetch_sources(){
   rm /tmp/nanorc.zip
 }
 
-_update_nanorc(){
+_update_nanorc() {
   touch ~/.nanorc
       
   # add all includes from ~/.nano/nanorc if they're not already there
@@ -28,7 +28,7 @@ _update_nanorc(){
   done < ~/.nano/nanorc
 }
 
-_update_nanorc_lite(){
+_update_nanorc_lite() {
   sed -i '/include "\/usr\/share\/nano\/\*\.nanorc"/i include "~\/.nano\/*.nanorc"' "${NANORC_FILE}"
 }
 
